@@ -1,1 +1,1 @@
-web: gunicorn djangoproj.wsgi
+web: waitress-serve --port:$PORT djangoproj.wsgi:application
